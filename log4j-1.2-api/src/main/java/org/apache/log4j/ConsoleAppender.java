@@ -51,7 +51,7 @@ public class ConsoleAppender extends WriterAppender {
 
     /**
      * Constructs a configured appender.
-     *TODO: overridable method, that needs to be changed
+     *TODO: overridable method, that needs to be changed; not sure how to fix this
      * @param layout layout, may not be null.
      * @param target target, either "System.err" or "System.out".
      */
