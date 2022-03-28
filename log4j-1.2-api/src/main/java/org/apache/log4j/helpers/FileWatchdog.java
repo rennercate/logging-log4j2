@@ -40,7 +40,7 @@ public abstract class FileWatchdog extends Thread {
 
     /**
      * The delay to observe between every check. By default set {@link #DEFAULT_DELAY}.
-     *TODO: overridable method
+     *TODO: overridable method; fixed by deleting problem code
      */
     protected long delay = DEFAULT_DELAY;
 
@@ -54,7 +54,6 @@ public abstract class FileWatchdog extends Thread {
         this.filename = fileName;
         this.file = new File(fileName);
         setDaemon(true);
-        checkAndConfigure();
     }
 
     protected void checkAndConfigure() {
