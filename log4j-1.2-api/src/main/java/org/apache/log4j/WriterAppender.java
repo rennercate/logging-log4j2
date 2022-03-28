@@ -231,6 +231,7 @@ public class WriterAppender extends AppenderSkeleton {
      * @param os The OutputStream.
      * @return The OutputStreamWriter.
      *TODO: instance will always return false so if statement is not needed
+     *FIXED by commenting out if statement
      */
     protected OutputStreamWriter createWriter(OutputStream os) {
         OutputStreamWriter retval = null;
@@ -240,9 +241,9 @@ public class WriterAppender extends AppenderSkeleton {
             try {
                 retval = new OutputStreamWriter(os, enc);
             } catch (IOException e) {
-                if (e instanceof InterruptedIOException) {
-                    Thread.currentThread().interrupt();
-                }
+                /*if (e instanceof InterruptedIOException) {
+                    /*Thread.currentThread().interrupt();
+               /* }
                 LOGGER.warn("Error initializing output writer.");
                 LOGGER.warn("Unsupported encoding?");
             }
