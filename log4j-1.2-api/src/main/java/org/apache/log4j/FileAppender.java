@@ -245,7 +245,7 @@ public class FileAppender extends WriterAppender {
      * <b>Do not use this method directly. To configure a FileAppender or one of its subclasses, set its properties one by
      * one and then call activateOptions.</b>
      * </p>
-     * 
+     * TODO: parameters not assigned and could be final
      * @param fileName The path to the log file.
      * @param append If true will append to fileName. Otherwise will truncate fileName.
      */
