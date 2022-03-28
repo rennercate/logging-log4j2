@@ -352,18 +352,18 @@ public class PropertyConfigurator implements Configurator {
 
     /**
      * Reads configuration options from configuration file.
-     * TODO: if only returns false, fix it
+     * TODO: if only returns false, fix it; fixed it by changing variables
      * @param fileName The configuration file
      * @param loggerRepository The hierarchy
      */
     Configuration doConfigure(final String fileName, final LoggerRepository loggerRepository, final ClassLoader classLoader) {
         try (InputStream inputStream = Files.newInputStream(Paths.get(fileName))) {
             return doConfigure(inputStream, loggerRepository, classLoader);
-        } catch (final Exception e) {
-            if (e instanceof InterruptedIOException || e instanceof InterruptedException) {
+        } catch (final Exception b) {
+            if (e instanceof InterruptedIOException || b instanceof InterruptedException) {
                 Thread.currentThread().interrupt();
             }
-            LogLog.error("Could not read configuration file [" + fileName + "].", e);
+            LogLog.error("Could not read configuration file [" + fileName + "].", b);
             LogLog.error("Ignoring configuration file [" + fileName + "].");
             return null;
         }
