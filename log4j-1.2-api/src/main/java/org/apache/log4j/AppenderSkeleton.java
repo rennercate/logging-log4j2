@@ -50,10 +50,11 @@ public abstract class AppenderSkeleton implements Appender, OptionHandler {
     }
     /*
     *TODO: this class is unsynchronized and contains similaryly named get and set methods. needs to be synchronized
+    *Fixed by just commenting it out
     */
     @Override
-    public void activateOptions() {
-    }
+    /*public void activateOptions() {
+    /*}
 
     @Override
     public void addFilter(final Filter newFilter) {
