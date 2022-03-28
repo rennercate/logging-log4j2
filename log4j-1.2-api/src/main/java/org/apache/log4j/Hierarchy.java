@@ -183,10 +183,10 @@ public class Hierarchy implements LoggerRepository, RendererSupport, ThrowableRe
         getLoggersMap(getContext()).clear();
     }
     /*
-    *TODO: cat parameter could be final
+    *TODO: cat parameter could be not final; fixed to not be final
     */
     @Override
-    public void emitNoAppenderWarning(final Category cat) {
+    public void emitNoAppenderWarning(Category cat) {
         // No appenders in hierarchy, warn user only once.
         if (!this.emittedNoAppenderWarning) {
             LogLog.warn("No appenders could be found for logger (" + cat.getName() + ").");
