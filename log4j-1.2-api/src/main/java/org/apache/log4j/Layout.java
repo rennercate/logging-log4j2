@@ -49,6 +49,8 @@ public abstract class Layout {
      * Returns the header for the layout format. The base class returns
      * <code>null</code>.
      * @return The header.
+     *TODO: This is an empty method and should be an abstract
+     *FIXME: make an abstract
      */
     public String getHeader() {
         return null;
@@ -57,6 +59,8 @@ public abstract class Layout {
     /**
      * Returns the footer for the layout format. The base class returns
      * <code>null</code>.
+     *TODO: This is an empty method and should be an abstract
+     *FIXME: make an abstract
      * @return The footer.
      */
     public String getFooter() {
