@@ -352,7 +352,7 @@ public class PropertyConfigurator implements Configurator {
 
     /**
      * Reads configuration options from configuration file.
-     *
+     * TODO: if only returns false, fix it
      * @param fileName The configuration file
      * @param loggerRepository The hierarchy
      */
