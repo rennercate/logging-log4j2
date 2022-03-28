@@ -51,8 +51,9 @@ public abstract class Layout {
      * @return The header.
      *TODO: This is an empty method and should be an abstract
      *FIXME: make an abstract
+     *FIXED: made into abstract
      */
-    public String getHeader() {
+    public abstract String getHeader() {
         return null;
     }
 
@@ -61,9 +62,10 @@ public abstract class Layout {
      * <code>null</code>.
      *TODO: This is an empty method and should be an abstract
      *FIXME: make an abstract
+     *FIXED: made into abstract
      * @return The footer.
      */
-    public String getFooter() {
+    public abstract String getFooter() {
         return null;
     }
 
