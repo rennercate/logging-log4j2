@@ -230,6 +230,7 @@ public class WriterAppender extends AppenderSkeleton {
      * system encoding (an error message will be printed to the LOGGER.
      * @param os The OutputStream.
      * @return The OutputStreamWriter.
+     *TODO: instance will always return false so if statement is not needed
      */
     protected OutputStreamWriter createWriter(OutputStream os) {
         OutputStreamWriter retval = null;
