@@ -98,11 +98,15 @@ public class DOMConfigurator {
         xdog.setDelay(delay);
         xdog.start();
     }
-
+    /*
+    *FIXME: only returns null
+    */
     public static Object parseElement(final Element element, final Properties props, @SuppressWarnings("rawtypes") final Class expectedClass) {
         return null;
     }
-
+    /*
+    *FIXME: empty methods
+    */
     public static void setParameter(final Element elem, final PropertySetter propSetter, final Properties props) {
 
     }
