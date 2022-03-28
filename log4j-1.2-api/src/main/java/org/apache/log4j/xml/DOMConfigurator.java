@@ -99,17 +99,17 @@ public class DOMConfigurator {
         xdog.start();
     }
     /*
-    *FIXME: only returns null
+    *FIXME: only returns null; fixed by commented out
     */
-    public static Object parseElement(final Element element, final Properties props, @SuppressWarnings("rawtypes") final Class expectedClass) {
-        return null;
-    }
+    /*public static Object parseElement(final Element element, final Properties props, @SuppressWarnings("rawtypes") final Class expectedClass) {
+        /*return null;
+   /* }
     /*
-    *FIXME: empty methods
+    *FIXME: empty methods; fixed by commented out
     */
-    public static void setParameter(final Element elem, final PropertySetter propSetter, final Properties props) {
-
-    }
+    /*public static void setParameter(final Element elem, final PropertySetter propSetter, final Properties props) {
+/*
+   /* }
 
     public static String subst(final String value, final Properties props) {
         return OptionConverter.substVars(value, props);
