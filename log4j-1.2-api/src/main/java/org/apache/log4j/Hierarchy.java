@@ -182,7 +182,9 @@ public class Hierarchy implements LoggerRepository, RendererSupport, ThrowableRe
         ht.clear();
         getLoggersMap(getContext()).clear();
     }
-
+    /*
+    *TODO: cat parameter could be final
+    */
     @Override
     public void emitNoAppenderWarning(final Category cat) {
         // No appenders in hierarchy, warn user only once.
