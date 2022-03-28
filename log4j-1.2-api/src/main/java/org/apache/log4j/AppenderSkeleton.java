@@ -48,7 +48,9 @@ public abstract class AppenderSkeleton implements Appender, OptionHandler {
 
     protected AppenderSkeleton(final boolean isActive) {
     }
-
+    /*
+    *TODO: this class is unsynchronized and contains similaryly named get and set methods. needs to be synchronized
+    */
     @Override
     public void activateOptions() {
     }
