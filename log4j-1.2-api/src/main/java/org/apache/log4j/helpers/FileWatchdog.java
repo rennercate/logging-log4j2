@@ -40,6 +40,7 @@ public abstract class FileWatchdog extends Thread {
 
     /**
      * The delay to observe between every check. By default set {@link #DEFAULT_DELAY}.
+     *TODO: overridable method
      */
     protected long delay = DEFAULT_DELAY;
 
